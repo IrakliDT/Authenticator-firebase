@@ -1,7 +1,5 @@
 
-const SignUp = documen.getElementById('btn')
-
-SignUp.addEventListener('click', (e) => {
+user.addEventListener('click', (e) => {
 
 
 const username = document.getElementById('userName').value;  
@@ -17,7 +15,7 @@ const auth = document.getElementById('btn').value;
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    alert("User created successfully")
+    alert(user)
     // ...
   })
   .catch((error) => {
