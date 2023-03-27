@@ -59,7 +59,7 @@ const auth = getAuth();
             const password = document.getElementById('password').value;
              console.log(username, email, password,);
 
-            createUserWithEmailAndPassword(auth, username, email, password,)
+            createUserWithEmailAndPassword(auth, email, password,)
             .then((userCredential) => {
             // Registration 
             const user = userCredential.user;  
